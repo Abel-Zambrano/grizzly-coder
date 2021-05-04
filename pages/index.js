@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}></main>
-
+      <h1>Grizzly Coder</h1>
       <footer className={styles.footer}></footer>
     </div>
   );
