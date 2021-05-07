@@ -1,19 +1,21 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
+import Page from "../components/Page";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Grizzly Coder</title>
         <meta name="Grizzly Coder" content="Web development services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}></main>
-      <h1>Grizzly Coder</h1>
-      <footer className={styles.footer}></footer>
+      <main>
+        <Page>
+          <Header />
+        </Page>
+      </main>
+      <footer></footer>
     </div>
   );
 }
