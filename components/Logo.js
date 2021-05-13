@@ -9,7 +9,7 @@ const MyLogo = styled.div`
   }
 `;
 
-export default function () {
+export default function Logo() {
   return (
     <MyLogo>
       <h1 className="logo">grizzly coder</h1>
