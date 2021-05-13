@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MyLogo = styled.div`
   .logo {
-    color: var(--green);
+    text-transform: capitalize;
   }
 `;
 
