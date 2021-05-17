@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const MyNavLinks = styled.div`
   .links {
@@ -20,10 +21,18 @@ export default function NavLinks() {
   return (
     <MyNavLinks>
       <ul className="links">
-        <li className="links-item">home</li>
-        <li className="links-item">about</li>
-        <li className="links-item">merchandise</li>
-        <li className="links-item">contact</li>
+        <li className="links-item">
+          <Link href="/">home</Link>
+        </li>
+        <li className="links-item">
+          <Link href="/about">about</Link>
+        </li>
+        <li className="links-item">
+          <Link href="/merchandise">merchandise</Link>
+        </li>
+        <li className="links-item">
+          <Link href="/contact">contact</Link>
+        </li>
       </ul>
     </MyNavLinks>
   );
