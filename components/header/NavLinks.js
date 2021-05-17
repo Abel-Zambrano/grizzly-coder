@@ -13,6 +13,10 @@ const MyNavLinks = styled.div`
       font-size: 1.2rem;
       text-transform: uppercase;
       color: var(--white);
+
+      &:hover {
+        color: var(--primary-orange);
+      }
     }
   }
 `;
