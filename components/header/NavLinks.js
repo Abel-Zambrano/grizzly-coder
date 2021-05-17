@@ -5,9 +5,11 @@ const MyNavLinks = styled.div`
     display: flex;
     justify-content: space-around;
     list-style: none;
+    width: 100vw;
 
     &-item {
       font-family: "Orbitron", sans-serif;
+      font-size: 1.2rem;
       text-transform: uppercase;
       color: var(--white);
     }
