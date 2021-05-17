@@ -1,5 +1,9 @@
-import Header from "../components/Header";
+import HomeBackground from "../components/home/HomeBackground";
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <HomeBackground />
+    </>
+  );
 }
