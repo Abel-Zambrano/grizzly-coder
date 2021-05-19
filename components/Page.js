@@ -1,5 +1,4 @@
 import Header from "./header/Header";
-import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -38,14 +37,12 @@ a {
 }
 `;
 
-const MyPage = styled.div``;
-
-export default function Page({ children }) {
+export default function Page({ children, className }) {
   return (
-    <MyPage>
+    <>
       <GlobalStyles />
-      <Header />
+      <Header className={className} />
       {children}
-    </MyPage>
+    </>
   );
 }
