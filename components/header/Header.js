@@ -4,8 +4,7 @@ import Nav from "./Nav";
 
 const MyHeader = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--black);
   height: 14rem;
