@@ -2,11 +2,12 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const MyNavLinks = styled.div`
+  width: 50rem;
+
   .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
-    width: 100vw;
 
     &-item {
       font-family: "Orbitron", sans-serif;
