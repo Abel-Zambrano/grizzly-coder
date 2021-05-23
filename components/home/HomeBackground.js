@@ -1,3 +1,13 @@
+import Image from "next/image";
+
 export default function HomeBackground() {
-  return <h1>Home Page</h1>;
+  return (
+    <Image
+      src="/images/background.png"
+      alt="background"
+      layout="responsive"
+      width="1080"
+      height="760"
+    />
+  );
 }

@@ -27,10 +27,10 @@ export default function NavLinks() {
   return (
     <MyNavLinks>
       <ul className="links">
-        {links.map((link) => {
+        {links.map(({ id, name, url }) => {
           return (
-            <li key={link.id} className="links-item">
-              <Link href={link.url}>{link.name}</Link>
+            <li key={id} className="links-item">
+              <Link href={url}>{name}</Link>
             </li>
           );
         })}
