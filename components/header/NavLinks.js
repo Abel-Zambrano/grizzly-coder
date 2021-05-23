@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import links from "../../data/links";
 
 const MyNavLinks = styled.div`
   width: 50rem;
