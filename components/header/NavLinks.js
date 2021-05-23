@@ -27,18 +27,13 @@ export default function NavLinks() {
   return (
     <MyNavLinks>
       <ul className="links">
-        <li className="links-item">
-          <Link href="/">home</Link>
-        </li>
-        <li className="links-item">
-          <Link href="/about">about</Link>
-        </li>
-        <li className="links-item">
-          <Link href="/merchandise">merchandise</Link>
-        </li>
-        <li className="links-item">
-          <Link href="/contact">contact</Link>
-        </li>
+        {links.map((link) => {
+          return (
+            <li key={link.id} className="links-item">
+              <Link href={link.url}>{link.name}</Link>
+            </li>
+          );
+        })}
       </ul>
     </MyNavLinks>
   );
