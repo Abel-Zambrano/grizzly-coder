@@ -6,8 +6,8 @@ export default function HomeBackground() {
       src="/images/background.png"
       alt="background"
       layout="responsive"
-      width="1080"
-      height="760"
+      width="1920"
+      height="1080"
     />
   );
 }
