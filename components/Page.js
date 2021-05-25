@@ -1,4 +1,5 @@
 import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -43,6 +44,7 @@ export default function Page({ children, className }) {
       <GlobalStyles />
       <Header className={className} />
       {children}
+      <Footer />
     </>
   );
 }
