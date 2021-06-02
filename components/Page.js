@@ -1,6 +1,6 @@
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -20,6 +20,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -39,13 +40,23 @@ a {
 }
 `;
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  flex: 1;
+`;
+
 export default function Page({ children, className }) {
   return (
-    <>
+    <Container>
       <GlobalStyles />
       <Header className={className} />
-      {children}
+      <Content>{children}</Content>
       <Footer />
-    </>
+    </Container>
   );
 }
