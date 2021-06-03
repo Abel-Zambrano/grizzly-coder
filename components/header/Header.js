@@ -6,7 +6,7 @@ const MyHeader = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--black);
+  background-color: var(--black-dark);
   height: 10rem;
 `;
 

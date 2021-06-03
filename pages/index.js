@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HomeBackground from "../components/home/HomeBackground";
+// import HomeBackground from "../components/home/HomeBackground";
 
 const Container = styled.div`
   display: flex;
@@ -9,9 +9,5 @@ const Container = styled.div`
 `;
 
 export default function Home() {
-  return (
-    <Container>
-      <HomeBackground />
-    </Container>
-  );
+  return <Container>{/* <HomeBackground /> */}</Container>;
 }
