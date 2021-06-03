@@ -5,7 +5,8 @@ import styled, { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 :root {
-  --black: #181818;
+  --black-dark: rgb(22, 22, 22);
+  --black-light: rgb(29, 29, 29)
   --white: #fff;
   --primary-blue: #0262bc;
   --primary-orange:  #ffa64d;
@@ -43,7 +44,6 @@ a {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: black;
   min-height: 100vh;
 `;
 
