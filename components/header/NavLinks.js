@@ -12,7 +12,7 @@ const MyNavLinks = styled.div`
 
     &-item {
       font-family: "Orbitron", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       color: var(--white);
 
