@@ -45,6 +45,24 @@ const Left = styled.div`
     color: var(--white);
     font-size: 2rem;
     text-transform: capitalize;
+    margin-top: 10rem;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 26rem;
+    }
+  }
+
+  .title {
+    color: var(--primary-orange);
+  }
+
+  .orange-line {
+    background: var(--primary-orange);
+    height: 0.5rem;
+    width: 6rem;
   }
 `;
 
@@ -62,7 +80,10 @@ export default function HomeBackground() {
           <p className="text">services in web development simplified</p>
         </div>
         <div className="about">
-          <h2>what we do</h2>
+          <div className="about-title">
+            <div className="orange-line" />
+            <h2 className="title">what we do</h2>
+          </div>
           <p>we provide services in dynamic content</p>
         </div>
       </Left>
