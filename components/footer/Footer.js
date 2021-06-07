@@ -4,7 +4,7 @@ const MyFooter = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10rem;
+  height: 8rem;
   text-align: center;
   background-color: var(--black-dark);
 

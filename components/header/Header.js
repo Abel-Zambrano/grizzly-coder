@@ -7,7 +7,7 @@ const MyHeader = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: var(--black-dark);
-  height: 10rem;
+  height: 8rem;
 `;
 
 export default function Header() {
