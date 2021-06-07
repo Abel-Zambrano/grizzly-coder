@@ -29,7 +29,6 @@ const Wrapper = styled.div`
       position: relative;
       top: 0;
       animation: ${slide} 12s steps(4) infinite;
-      text-decoration: underline;
     }
 
     & li span {
