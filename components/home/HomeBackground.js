@@ -1,5 +1,10 @@
 import Image from "next/image";
 import styled from "styled-components";
+import Services from "./Services";
+
+const MyImage = styled(Image)`
+  border-radius: 2rem;
+`;
 
 const Section = styled.section`
   background-color: var(--black-light);
@@ -7,6 +12,13 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   height: 80vh;
+`;
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200rem;
 `;
 
 const Left = styled.div`
@@ -71,31 +83,33 @@ const Right = styled.div``;
 export default function HomeBackground() {
   return (
     <Section>
-      <Left>
-        <div className="container">
-          <h1 className="header">
-            connecting you to the <span className="header__blue">digital</span>{" "}
-            world
-          </h1>
-          <p className="text">services in web development simplified</p>
-        </div>
-        <div className="about">
-          <div className="about-title">
-            <div className="orange-line" />
-            <h2 className="title">what we do</h2>
+      <Container>
+        <Left>
+          <div className="container">
+            <h1 className="header">
+              connecting you to the{" "}
+              <span className="header__blue">digital</span> world
+            </h1>
+            <p className="text">services in web development simplified</p>
           </div>
-          <p>we provide services in dynamic content</p>
-        </div>
-      </Left>
-      <Right>
-        <Image
-          src="/images/home-background.png"
-          alt="background"
-          layout="fixed"
-          width={500}
-          height={700}
-        />
-      </Right>
+          <div className="about">
+            <div className="about-title">
+              <div className="orange-line" />
+              <h2 className="title">what we do</h2>
+            </div>
+            <Services />
+          </div>
+        </Left>
+        <Right>
+          <MyImage
+            src="/images/home-background.png"
+            alt="background"
+            layout="fixed"
+            width={500}
+            height={700}
+          />
+        </Right>
+      </Container>
     </Section>
   );
 }
