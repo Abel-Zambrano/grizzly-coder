@@ -1,26 +1,40 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slide = keyframes`
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -36rem;
+    }
+`;
 
 const Wrapper = styled.div`
-  display: inline-flex;
+  display: flex;
+  margin-left: 1.5rem;
+  height: 9rem;
+  line-height: 9rem;
+  overflow: hidden;
 
   .dynamic-text {
     list-style: none;
     color: var(--primary-orange);
     text-transform: uppercase;
     margin-left: 0.7rem;
+    overflow: hidden;
+    height: 9rem;
+    line-height: 9rem;
+
+    & li {
+      position: relative;
+      top: 0;
+      animation: ${slide} 12s steps(4) infinite;
+    }
 
     & li span {
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        border-left: 2px solid var(--primary-orange);
-        animation: typing 1.5s steps(13) infinite;
-      }
+      margin: 0.5rem 0;
+      line-height: 9rem;
     }
   }
 `;
