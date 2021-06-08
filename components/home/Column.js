@@ -15,11 +15,11 @@ export default function Column() {
     <MyColumn>
       <ServiceContentRight
         src="/images/seo.jpg"
-        alt="web design"
+        alt="seo"
         width="500"
         height="500"
-        title="web design"
-        text="beatiful content designs that represent your brand image"
+        title="search engine optimization"
+        text="improve website ranking, site volume and brand awareness"
       />
       <ServiceContentLeft
         src="/images/web-design.png"

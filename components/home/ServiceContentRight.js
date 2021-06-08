@@ -46,13 +46,7 @@ export default function ServiceContentLeft({
 }) {
   return (
     <Section>
-      <MyImage
-        className={className}
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-      />
+      <MyImage src={src} alt={alt} width={width} height={height} />
       <Content>
         <h2 className="title">{title}</h2>
         <p className="text">{text}</p>
