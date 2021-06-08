@@ -23,7 +23,7 @@ const Content = styled.div`
   padding: 4rem;
   text-transform: capitalize;
   color: var(--white);
-  margin-right: -10rem;
+  margin-left: -10rem;
   z-index: 10;
 
   .title {
@@ -45,11 +45,11 @@ export default function ServiceContentLeft({
 }) {
   return (
     <Section>
+      <MyImage src={src} alt={alt} width={width} height={height} />
       <Content>
         <h2 className="title">{title}</h2>
         <p className="text">{text}</p>
       </Content>
-      <MyImage src={src} alt={alt} width={width} height={height} />
     </Section>
   );
 }

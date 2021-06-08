@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import ServiceContent from "./ServiceContentLeft";
+import ServiceContentLeft from "./ServiceContentLeft";
+import ServiceContentRight from "./ServiceContentRight";
 
 const MyColumn = styled.div`
   display: flex;
@@ -12,7 +13,15 @@ const MyColumn = styled.div`
 export default function Column() {
   return (
     <MyColumn>
-      <ServiceContent
+      <ServiceContentRight
+        src="/images/web-design.png"
+        alt="web design"
+        width="500"
+        height="500"
+        title="web design"
+        text="beatiful content designs that represent your brand image"
+      />
+      <ServiceContentLeft
         src="/images/web-design.png"
         alt="web design"
         width="500"
