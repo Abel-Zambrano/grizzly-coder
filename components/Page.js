@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
   --white: #fff;
   --primary-blue: #0262bc;
   --primary-orange:  #ffa64d;
+  --gray-blue: rgb(90, 99, 125);
 }
 
 html {
