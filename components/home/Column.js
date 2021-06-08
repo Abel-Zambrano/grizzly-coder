@@ -29,6 +29,22 @@ export default function Column() {
         title="web design"
         text="beatiful content designs that represent your brand image"
       />
+      <ServiceContentRight
+        src="/images/accessibility.webp"
+        alt="seo"
+        width="500"
+        height="500"
+        title="accessibility"
+        text="web site audit and access optimization for all"
+      />
+      <ServiceContentLeft
+        src="/images/mobile-design.png"
+        alt="mobile design"
+        width="500"
+        height="500"
+        title="mobile design"
+        text="mobile-screen responsivess, improve UI for mobile users"
+      />
     </MyColumn>
   );
 }

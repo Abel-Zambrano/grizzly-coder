@@ -10,6 +10,7 @@ const Section = styled.section`
 
 const MyImage = styled(Image)`
   border-radius: 2rem;
+  object-fit: cover;
 `;
 
 const Content = styled.div`
