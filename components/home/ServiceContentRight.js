@@ -10,6 +10,7 @@ const Section = styled.section`
 
 const MyImage = styled(Image)`
   border-radius: 2rem;
+  object-fit: cover;
 `;
 
 const Content = styled.div`
@@ -45,7 +46,13 @@ export default function ServiceContentLeft({
 }) {
   return (
     <Section>
-      <MyImage src={src} alt={alt} width={width} height={height} />
+      <MyImage
+        className={className}
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+      />
       <Content>
         <h2 className="title">{title}</h2>
         <p className="text">{text}</p>

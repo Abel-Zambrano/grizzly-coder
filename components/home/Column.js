@@ -14,7 +14,7 @@ export default function Column() {
   return (
     <MyColumn>
       <ServiceContentRight
-        src="/images/web-design.png"
+        src="/images/seo.jpg"
         alt="web design"
         width="500"
         height="500"
