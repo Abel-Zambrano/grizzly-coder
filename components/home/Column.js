@@ -10,9 +10,15 @@ const MyColumn = styled.div`
   margin: 20rem 0;
 `;
 
-export default function Column() {
+const Title = styled.h2`
+  font-size: 4rem;
+  text-transform: capitalize;
+`;
+
+export default function Column({ heading }) {
   return (
     <MyColumn>
+      <Title>{heading}</Title>
       <ServiceContentRight
         src="/images/seo.jpg"
         alt="seo"

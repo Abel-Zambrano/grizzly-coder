@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Container>
       <HomeBackground />
-      <Column />
+      <Column heading="web services" />
     </Container>
   );
 }

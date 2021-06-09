@@ -36,6 +36,14 @@ const Content = styled.div`
   }
 `;
 
+const BlueBG = styled.div`
+  background-color: var(--primary-blue);
+  border-radius: 2rem;
+  height: 70rem;
+  width: 80rem;
+  margin-left: -85rem;
+`;
+
 export default function ServiceContentLeft({
   src,
   alt,
@@ -51,6 +59,7 @@ export default function ServiceContentLeft({
         <h2 className="title">{title}</h2>
         <p className="text">{text}</p>
       </Content>
+      <BlueBG />
     </Section>
   );
 }

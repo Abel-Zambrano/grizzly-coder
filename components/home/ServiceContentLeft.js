@@ -36,6 +36,14 @@ const Content = styled.div`
   }
 `;
 
+const OrangeBG = styled.div`
+  background-color: var(--primary-orange);
+  border-radius: 2rem;
+  height: 70rem;
+  width: 80rem;
+  margin-right: -85rem;
+`;
+
 export default function ServiceContentLeft({
   src,
   alt,
@@ -46,6 +54,7 @@ export default function ServiceContentLeft({
 }) {
   return (
     <Section>
+      <OrangeBG />
       <Content>
         <h2 className="title">{title}</h2>
         <p className="text">{text}</p>

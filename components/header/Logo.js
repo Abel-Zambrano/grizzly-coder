@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 const MyImage = styled(Image)``;
 
 const MyLogo = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .logo {
     text-transform: capitalize;
@@ -18,13 +21,17 @@ const MyLogo = styled.div`
 export default function Logo() {
   return (
     <MyLogo>
-      <MyImage
-        src="/images/gc-logo.png"
-        alt="grizzly coder logo"
-        width={100}
-        height={80}
-      />
-      <h1 className="logo">grizzly coder</h1>
+      <Link className="link" href="/">
+        <a className="link">
+          <MyImage
+            src="/images/gc-logo.png"
+            alt="grizzly coder logo"
+            width={100}
+            height={80}
+          />
+          <h1 className="logo">grizzly coder</h1>
+        </a>
+      </Link>
     </MyLogo>
   );
 }
