@@ -8,9 +8,11 @@ const GlobalStyles = createGlobalStyle`
   --black-dark: rgb(22, 22, 22);
   --black-light: rgb(29, 29, 29);
   --white: #fff;
+  --off-white: #f2f2f2;
   --primary-blue: #0262bc;
   --primary-orange:  #ffa64d;
   --gray-blue: rgb(90, 99, 125);
+
 }
 
 html {

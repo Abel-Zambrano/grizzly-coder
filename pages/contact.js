@@ -1,3 +1,14 @@
+import Form from "../components/contact/Form";
+import Column from "../components/Column";
+import Title from "../components/Title";
+import SquareBG from "../components/contact/SquareBG";
+
 export default function contact() {
-  return <h1>Contact Page</h1>;
+  return (
+    <Column>
+      <Title title="ready to contact us?" />
+      <SquareBG />
+      <Form />
+    </Column>
+  );
 }
