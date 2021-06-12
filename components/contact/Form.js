@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
 
 const Container = styled.div`
   background-color: var(--off-white);
@@ -11,28 +13,22 @@ const Container = styled.div`
 const MyForm = styled.form`
   display: flex;
   flex-direction: column;
+
+  #label {
+  }
 `;
 
 export default function Form() {
   return (
     <Container>
       <MyForm>
-        <label htmlFor="name" className="label">
-          name
-        </label>
-        <input type="text" className="input" />
-        <label htmlFor="" className="label">
-          email
-        </label>
-        <input type="text" className="input" />
-        <label htmlFor="" className="label">
-          phone
-        </label>
-        <input type="text" className="input" />
-        <label htmlFor="" className="label">
-          company
-        </label>
-        <input type="text" className="input" />
+        <TextField id="label" label="Name" variant="outlined" />
+        <TextField id="label" label="Email" variant="outlined" />
+        <TextField id="label" label="Phone" variant="outlined" />
+        <TextField id="label" label="Company" variant="outlined" />
+        <Button variant="contained" color="primary">
+          submit
+        </Button>
       </MyForm>
     </Container>
   );
