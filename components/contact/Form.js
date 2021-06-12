@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import SquareBG from "./SquareBG";
 
 const Container = styled.div`
   background-color: var(--off-white);
