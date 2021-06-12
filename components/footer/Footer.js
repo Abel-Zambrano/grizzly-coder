@@ -6,11 +6,9 @@ const MyFooter = styled.footer`
   justify-content: center;
   height: 8rem;
   text-align: center;
-  background-color: var(--black-dark);
-
   .copyright {
     font-size: 1.5rem;
-    color: var(--white);
+    color: rgba(0, 0, 0, 0.5);
   }
 `;
 
