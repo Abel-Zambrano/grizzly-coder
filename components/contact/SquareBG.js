@@ -5,7 +5,7 @@ const Background = styled.div`
   display: flex;
   .blue {
     background-color: var(--primary-blue);
-    height: 60rem;
+    height: 50rem;
     width: 70rem;
     border-radius: 2rem;
   }

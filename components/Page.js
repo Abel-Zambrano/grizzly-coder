@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
 html {
     box-sizing: border-box;
-    /* font-size: 62.5%; */
+    font-size: 62.5%;
     letter-spacing: 0.1rem;
     scroll-behavior: smooth;
 }
@@ -25,9 +25,8 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
