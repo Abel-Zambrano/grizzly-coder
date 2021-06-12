@@ -78,7 +78,10 @@ const Left = styled.div`
   }
 `;
 
-const Right = styled.div``;
+const Right = styled.div`
+  height: 70rem;
+  width: 50rem;
+`;
 
 export default function HomeBackground() {
   return (
@@ -104,7 +107,6 @@ export default function HomeBackground() {
           <MyImage
             src="/images/home-background.png"
             alt="background"
-            layout="fixed"
             width={500}
             height={700}
           />

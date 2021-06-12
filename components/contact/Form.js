@@ -29,6 +29,7 @@ const MyForm = styled.form`
   height: 100%;
 
   #label {
+    font-size: 2rem;
   }
 `;
 

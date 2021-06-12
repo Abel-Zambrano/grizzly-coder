@@ -1,3 +1,3 @@
 export default function merchandise() {
-  return <h1>Merchandise Page</h1>;
+  return <h1>Merchandise Page Coming Soon...</h1>;
 }
