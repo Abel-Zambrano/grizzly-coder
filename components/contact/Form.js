@@ -39,11 +39,12 @@ export default function Form() {
       <SquareBG />
       <FormBox>
         <MyForm
-          name="contact"
+          name="contact v1"
           method="POST"
           data-netlify="true"
           onSubmit="submit"
         >
+          <input type="hidden" name="form-name" value="contact v1" />
           <Title title="Contact Form" />
           <TextField id="label" label="Name" name="name" variant="outlined" />
           <TextField id="label" label="Email" name="email" variant="outlined" />
