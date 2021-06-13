@@ -38,7 +38,12 @@ export default function Form() {
     <Container>
       <SquareBG />
       <FormBox>
-        <MyForm name="contact" method="POST" data-netlify="true">
+        <MyForm
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+        >
           <Title title="Contact Form" />
           <TextField id="label" label="Name" name="name" variant="outlined" />
           <TextField id="label" label="Email" name="email" variant="outlined" />
