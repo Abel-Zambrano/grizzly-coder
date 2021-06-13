@@ -38,7 +38,17 @@ export default function Form() {
     <Container>
       <SquareBG />
       <FormBox>
-        <MyForm
+        <form
+          name="contact v2"
+          method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+        >
+          <input type="hidden" name="form-name" value="contact v2" />
+          <input type="text" name="first-name" />
+          <button type="submit">GO</button>
+        </form>
+        {/* <MyForm
           name="contact v1"
           method="POST"
           data-netlify="true"
@@ -58,7 +68,7 @@ export default function Form() {
           <Button type="submit" variant="contained" color="primary">
             submit
           </Button>
-        </MyForm>
+        </MyForm> */}
       </FormBox>
     </Container>
   );
