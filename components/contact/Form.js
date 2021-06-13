@@ -38,13 +38,13 @@ export default function Form() {
     <Container>
       <SquareBG />
       <FormBox>
-        <MyForm>
+        <MyForm name="contact" method="POST" data-netlify="true">
           <Title title="Contact Form" />
           <TextField id="label" label="Name" variant="outlined" />
           <TextField id="label" label="Email" variant="outlined" />
           <TextField id="label" label="Phone" variant="outlined" />
           <TextField id="label" label="Company" variant="outlined" />
-          <Button variant="contained" color="primary">
+          <Button type="submit" variant="contained" color="primary">
             submit
           </Button>
         </MyForm>
